@@ -2,6 +2,10 @@
 
 using Xamarin.Forms;
 
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
+
 namespace Demo
 {
     public partial class App : Application
@@ -21,6 +25,13 @@ namespace Demo
                 DependencyService.Register<CloudDataStore>();
 
             SetMainPage();
+        }
+
+        protected override void OnStart()
+        {
+            base.OnStart();
+
+            MobileCenter.Start("ios=f014b8a9-d530-4df3-a15b-8006bb439bdb;", typeof(Analytics), typeof(Crashes));
         }
 
         public static void SetMainPage()
