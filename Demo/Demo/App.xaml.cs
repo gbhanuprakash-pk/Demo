@@ -55,7 +55,7 @@ namespace Demo
             Current.MainPage = new TabbedPage
             {
                 Children = {
-                    new NavigationPage(new ItemsPage())
+                    new NavigationPage(null)
                     {
                         Title = "Browse",
                         Icon = Xamarin.Forms.Device.OnPlatform("tab_feed.png", null, null)
