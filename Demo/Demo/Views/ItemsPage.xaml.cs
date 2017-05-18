@@ -23,7 +23,7 @@ namespace Demo
             if (item == null)
                 return;
 
-            await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(null)));
+            await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
 
             // Manually deselect item
             ItemsListView.SelectedItem = null;
