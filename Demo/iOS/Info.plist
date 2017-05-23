@@ -7,7 +7,7 @@
 	<key>CFBundleName</key>
 	<string>Demo</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.prokarma.demo</string>
+	<string>com.prokarma.sample</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
